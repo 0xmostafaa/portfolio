@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	    
+	<title>home page</title>
+</head>
+  {% block content %}
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mys.css' %}">
+
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+<!-- As a heading -->
+<div class="pos-f-t">
+	
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav navbar-nav navbar-right custom-menu">
+    	<li class="nav-item active">
+        	<a class="nav-link" href="#">Home</a>
+    	</li>
+    	<li class="nav-item">
+        	<a class="nav-link" href="#">contact</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="#">CV</a>
+      	</li>
+    </ul>
+  </div>
+<nav class="navbar navbar-dark bg-primary">
+
+	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <span class="navbar-brand mb-0 h1">RESUME🔴</span>
+<h1> </h1>
+</nav>
+</div>
+	<!-- background="{% static 'images/photo.jpg' %}" -->
+  <div class="overlay">
+  <img class="sora" src="{% static 'images/photo.jpg' %}" alt="background">
+
+    <h1 style="text-align: center" class="banner">welcome to my resume website</h1>
+  </div>
+{% endblock content %}
+
+	<div class="tab">
+    
+	<br>
+	<h3>i'm Mostafa Essam</h3>
+  <p>system administraton and ethical hacker</p>
+  <hr style="height: 5px;width:50%;text-align:left;margin-left:0">
+  <table>
+    <tr>
+      <th>AGE</th>
+      <th>17</th>
+    </tr>
+    <tr>
+      <th>ADDRESS</th>
+      <th>Cairo, Almazah, Heliopolis</th>
+    </tr>
+    <tr>
+      <th>E-MAIL</th>
+      <th>mostafa2468essam@gmail.com</th>
+    </tr>
+    <tr>
+      <th>PHONE</th>
+      <th>+21277147777</th>
+    </tr>
+    <tr>
+      <th>FREELANCE</th>
+      <th>   available</th>
+    </tr>
+  </table>
+
+
+  </div>
+<br>
+<br>
+<br>
+<a class="btn btn-primary" href="{% static 'images/cv.pdf' %}" download="mostafa essam resume" role="button">download the CV</a>
+
+  
+  <div class="social">
+  <a href="https://twitter.com/Mostafa75144176"><img class="twitter" src="{% static 'images/twitter.svg' %}"></a>
+  </div>
+    
+  <div class="social">
+  <a href="https://www.instagram.com/jr.m.o.s.t.a.f.a/"><img class="instagram" src="{% static 'images/instagram.svg' %}"></a>
+  </div>
+
+  <div class="social">
+  <a href="https://www.linkedin.com/in/mostafa-essam-115a93208"><img class="linkedin" src="{% static 'images/linkedin.svg' %}"></a>
+  </div>
+
+  <div class="social">
+  <a href="https://www.fiverr.com/users/mmoossttaaffaa/"><img class="linkedin" src="{% static 'images/fiverr.svg' %}"></a>
+   </div>
+
+<br>
+<br>
+	
+</body>
+</html>
